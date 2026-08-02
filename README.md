@@ -8,7 +8,7 @@ I am a passionate **Front-End Developer** and **Computer Science Student** dedic
 
 ### 🌐 Personal Portfolio
 Check out my interactive portfolio to explore my latest projects and work:  
-🔗 **[Visit My Portfolio](https://portfolio-ten-woad-h8b8co3958.vercel.app/)**
+🔗 **[Visit My Portfolio](https://kamel-ahmed7.github.io/Kamel-Ahmed7/)**
 
 ---
 
@@ -20,7 +20,7 @@ Check out my interactive portfolio to explore my latest projects and work:
 ---
 
 ### 📫 Connect with Me
-- **Portfolio:** [kamel-portfolio.vercel.app](https://portfolio-ten-woad-h8b8co3958.vercel.app/)
+- **Portfolio:** [kamel-portfolio](https://kamel-ahmed7.github.io/Kamel-Ahmed7/)
 - **GitHub:** [github.com/Kamel-Ahmed7](https://github.com/Kamel-Ahmed7)
 
 ---
