@@ -1,16 +1,27 @@
-## Hi there 👋
+# 👋 Hi, I'm Kamel Ahmed!
 
-<!--
-**Kamel-Ahmed7/Kamel-Ahmed7** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 🚀 Front-End Developer | Computer Science Student
 
-Here are some ideas to get you started:
+I am a passionate **Front-End Developer** and **Computer Science Student** dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning complex designs into seamless code and continuously learning new web technologies.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 🌐 Personal Portfolio
+Check out my interactive portfolio to explore my latest projects and work:  
+🔗 **[Visit My Portfolio](https://portfolio-ten-woad-h8b8co3958.vercel.app/)**
+
+---
+
+### 🛠️ Tech Stack & Skills
+- **Languages:** HTML5, CSS3, JavaScript (ES6+)
+- **Frameworks & Libraries:** React.js, Tailwind CSS, Bootstrap
+- **Tools & Version Control:** Git, GitHub, Vercel, VS Code
+
+---
+
+### 📫 Connect with Me
+- **Portfolio:** [kamel-portfolio.vercel.app](https://portfolio-ten-woad-h8b8co3958.vercel.app/)
+- **GitHub:** [github.com/Kamel-Ahmed7](https://github.com/Kamel-Ahmed7)
+
+---
+*⚡ "Building clean, accessible, and high-performance web experiences."*
