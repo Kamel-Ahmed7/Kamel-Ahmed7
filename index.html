@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamel Ahmed Ramadan | Frontend Developer & Computer Science Student</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Kamel Ahmed Ramadan | Frontend Developer & Computer Science Student">
+    <meta name="description" content="Portfolio of Kamel Ahmed Ramadan, a Frontend Developer and Computer Science student specializing in building premium responsive user interfaces and data-driven insights.">
+    <meta name="keywords" content="Kamel Ahmed Ramadan, Frontend Developer, Web Developer Portfolio, Computer Science Student, HTML, CSS, JavaScript, React, Next.js, Data Analysis, Python, Misr Higher Institute">
+    <meta name="author" content="Kamel Ahmed Ramadan">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Kamel-Ahmed7">
+    <meta property="og:title" content="Kamel Ahmed Ramadan | Frontend Developer & CS Student">
+    <meta property="og:description" content="Portfolio of Kamel Ahmed Ramadan. Discover modern frontend projects, technical skills in React/Next.js/Tailwind, and data analysis work in Python.">
+    <meta property="og:image" content="assets/images/profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Kamel Ahmed Ramadan | Frontend Developer & CS Student">
+    <meta property="twitter:description" content="Portfolio of Kamel Ahmed Ramadan. Discover modern frontend projects, technical skills in React/Next.js/Tailwind, and data analysis work in Python.">
+    <meta property="twitter:image" content="assets/images/profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. LOADING SCREEN -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-logo">KAMEL<span class="logo-dot"></span></div>
+        <div class="loader-ring">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+    </div>
+
+    <!-- BACKGROUND GRADIENT ORBS (FLOATING SHAPES) -->
+    <div class="background-glow-container">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- 2. FLOATING HEADER / NAVIGATION BAR -->
+    <header class="header" id="header">
+        <nav class="glass-nav" aria-label="Main Navigation">
+            <a href="#hero" class="logo" id="nav-logo">
+                KAMEL<span class="logo-dot"></span>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certificates</a></li>
+                <li><a href="#why-hire" class="nav-link">Why Me</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Let's Talk</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle Hamburger Button -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 3. HERO SECTION -->
+        <section id="hero" aria-label="Introduction">
+            <div class="hero-grid">
+                <div class="hero-content reveal-element">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <h1 class="hero-name">Kamel Ahmed Ramadan</h1>
+                    <div class="hero-title">
+                        <!-- Will display animated role tags via JS -->
+                        <span id="role-text">Frontend Developer</span>
+                    </div>
+                    <p class="hero-desc">
+                        Junior Computer Science student passionate about building modern web experiences and transforming data into actionable insights. Specialize in high-performance frontend interfaces.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/cv/kamel-ramadan-cv.pdf" download="Kamel_Ahmed_Ramadan_CV.pdf" class="btn btn-secondary" id="cv-btn">
+                            Download CV <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Visual & Badges -->
+                <div class="hero-visual reveal-element delay-200">
+                    <div class="hero-profile-container">
+                        <div class="hero-profile-img-wrapper">
+                            <img src="assets/images/profile.png" alt="Kamel Ahmed Ramadan" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                            <!-- Premium SVG Fallback Vector until profile.png is added -->
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                <defs>
+                                    <linearGradient id="svgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#0f172a" />
+                                        <stop offset="100%" stop-color="#1e1b4b" />
+                                    </linearGradient>
+                                    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#3b82f6" />
+                                        <stop offset="100%" stop-color="#8b5cf6" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="200" height="200" fill="url(#svgGrad)"/>
+                                <circle cx="100" cy="75" r="35" fill="url(#glowGrad)" opacity="0.8"/>
+                                <path d="M 40,165 C 40,120 70,120 100,120 C 130,120 160,120 160,165 Z" fill="url(#glowGrad)" opacity="0.8"/>
+                                <circle cx="100" cy="100" r="80" stroke="url(#glowGrad)" stroke-width="1.5" fill="none" stroke-dasharray="10 5" />
+                                <text x="100" y="190" font-family="'Outfit', sans-serif" font-size="10" fill="#f3f4f6" text-anchor="middle" letter-spacing="1">FRONTEND DEV</text>
+                            </svg>
+                        </div>
+                        
+                        <!-- Floating Interactive Badges -->
+                        <div class="floating-badge badge-1 glass-card">
+                            <div class="badge-icon"><i class="fa-solid fa-code"></i></div>
+                            <div class="badge-info">
+                                <span class="badge-title">Specialization</span>
+                                <span class="badge-val">Frontend Dev</span>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-badge badge-2 glass-card">
+                            <div class="badge-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div class="badge-info">
+                                <span class="badge-title">Analytical Tech</span>
+                                <span class="badge-val">Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ABOUT ME SECTION -->
+        <section id="about" aria-label="About Me">
+            <div class="section-header reveal-element">
+                <span class="section-subtitle">Discovery</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text-content reveal-element">
+                    <p class="about-bio">
+                        I am a junior <strong>Computer Science Student</strong> and a passionate <strong>Frontend Developer</strong> who specializes in constructing clean, responsive, and performance-optimized user interfaces. By combining creative styling with technical logical thinking, I translate complex wireframes into production-grade websites.
+                    </p>
+                    <p class="about-bio">
+                        Additionally, I complement my frontend core engineering with a growing expertise in <strong>Data Analysis</strong>, utilizing tools like Python, Pandas, and Excel. This unique blend allows me to adopt a data-informed approach to designing and programming user-centric interfaces.
+                    </p>
+                    
+                    <!-- Quick Statistics Counter -->
+                    <div class="about-stats">
+                        <div class="stat-item glass-card">
+                            <span class="stat-num" data-val="2027">2027</span>
+                            <span class="stat-label">Graduation</span>
+                        </div>
+                        <div class="stat-item glass-card">
+                            <span class="stat-num" data-val="15">0</span><span class="stat-num">+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Cards list -->
+                <div class="about-visual reveal-element delay-200">
+                    <div class="info-bullet-card glass-card">
+                        <div class="bullet-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="bullet-content">
+                            <h4>Academic Background</h4>
+                            <p>Pursuing a Bachelor's Degree in Computer Science, focusing on core programming foundations, networks, and logical architecture.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-bullet-card glass-card">
+                        <div class="bullet-icon-box"><i class="fa-solid fa-circle-check"></i></div>
+                        <div class="bullet-content">
+                            <h4>Quality First Philosophy</h4>
+                            <p>Aiming to write modular, reusable code structure using modern semantic markup, responsive queries, and standard optimization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. EDUCATION & TRAINING SECTION -->
+        <section id="education" aria-label="Education and Academic Milestones">
+            <div class="section-header reveal-element">
+                <span class="section-subtitle">Milestones</span>
+                <h2 class="section-title">Education & Training</h2>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Timeline Card 1: University -->
+                <div class="timeline-item reveal-element">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">2023 - 2027 (Expected)</span>
+                        <h3 class="timeline-title">Bachelor's Degree in Computer Science</h3>
+                        <h4 class="timeline-subtitle">Misr Higher Institute For Commerce & Computers</h4>
+                        <p class="timeline-desc">Currently in my 3rd Year (Junior Student). Studying software engineering, database architectures, computer network fundamentals, and design patterns.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Card 2: DEPI -->
+                <div class="timeline-item reveal-element">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">Currently Enrolled</span>
+                        <h3 class="timeline-title">DEPI Junior Data Analyst</h3>
+                        <h4 class="timeline-subtitle">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                        <p class="timeline-desc">Enrolled in the professional track to build data-driven reports, mastering data modeling, query optimization, and dashboards creation.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Card 3: NTI -->
+                <div class="timeline-item reveal-element">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <span class="timeline-date">Summer Training</span>
+                        <h3 class="timeline-title">NTI Summer Training</h3>
+                        <h4 class="timeline-subtitle">National Telecommunication Institute (NTI)</h4>
+                        <p class="timeline-desc">Intensive practical training focusing on two key domains:</p>
+                        <ul class="timeline-list">
+                            <li class="timeline-list-item">Web Development architectures and responsive interfaces</li>
+                            <li class="timeline-list-item">Data Analysis methodologies and structured pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. TECHNICAL SKILLS SECTION -->
+        <section id="skills" aria-label="Technical Skills and Technologies">
+            <div class="section-header reveal-element">
+                <span class="section-subtitle">Proficiency</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <!-- Skills Filters Category Tabs -->
+            <div class="skills-filters reveal-element">
+                <button class="filter-btn active" data-filter="all">All Tech Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend Dev</button>
+                <button class="filter-btn" data-filter="data">Data Analysis</button>
+                <button class="filter-btn" data-filter="tools">Tools & Dev Environment</button>
+            </div>
+
+            <!-- Skills Cards Grid -->
+            <div class="skills-grid reveal-element">
+                <!-- Skill 1: HTML5 (Frontend) -->
+                <div class="skill-card glass-card" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Semantics & Accessibility</span>
+                        <span>95%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 2: CSS3 (Frontend) -->
+                <div class="skill-card glass-card" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Flexbox, Grid & Animations</span>
+                        <span>92%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 3: JavaScript (Frontend) -->
+                <div class="skill-card glass-card" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                        </div>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Asynchronous Programming</span>
+                        <span>88%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 4: React (Frontend) -->
+                <div class="skill-card glass-card" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <span class="skill-level-badge">Intermediate</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Hooks, Context API & State</span>
+                        <span>85%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 5: Next.js (Frontend) -->
+                <div class="skill-card glass-card" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-solid fa-n"></i></div>
+                            <span class="skill-name">Next.js</span>
+                        </div>
+                        <span class="skill-level-badge">Intermediate</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="78%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>SSR & Routing Architecture</span>
+                        <span>78%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 6: Tailwind CSS (Frontend) -->
+                <div class="skill-card glass-card" data-category="frontend">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-solid fa-wind"></i></div>
+                            <span class="skill-name">Tailwind CSS</span>
+                        </div>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Utility Classes & Custom Configuration</span>
+                        <span>90%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 7: Python (Data Analysis) -->
+                <div class="skill-card glass-card" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <span class="skill-level-badge">Intermediate</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Scripting & Algorithms</span>
+                        <span>80%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 8: Pandas & NumPy (Data Analysis) -->
+                <div class="skill-card glass-card" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-solid fa-table-cells"></i></div>
+                            <span class="skill-name">Pandas & NumPy</span>
+                        </div>
+                        <span class="skill-level-badge">Intermediate</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Data Manipulation & Processing</span>
+                        <span>75%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 9: Microsoft Excel (Data Analysis) -->
+                <div class="skill-card glass-card" data-category="data">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-regular fa-file-excel"></i></div>
+                            <span class="skill-name">Microsoft Excel</span>
+                        </div>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Power Query, Pivot Tables, Formulations</span>
+                        <span>88%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 10: Git & GitHub (Tools) -->
+                <div class="skill-card glass-card" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-brands fa-github"></i></div>
+                            <span class="skill-name">Git & GitHub</span>
+                        </div>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>Version Control & Actions</span>
+                        <span>88%</span>
+                    </div>
+                </div>
+
+                <!-- Skill 11: Hosting / Deployment (Tools) -->
+                <div class="skill-card glass-card" data-category="tools">
+                    <div class="skill-header">
+                        <div class="skill-title-group">
+                            <div class="skill-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                            <span class="skill-name">Netlify & Vercel</span>
+                        </div>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+                    <div class="skill-progress-container">
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress-fill" data-progress="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-footer">
+                        <span>CI/CD Pipelines & Deployments</span>
+                        <span>90%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. FEATURED PROJECTS SECTION -->
+        <section id="projects" aria-label="Portfolio Projects">
+            <div class="section-header reveal-element">
+                <span class="section-subtitle">Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Ahmed Mandoh Law Office Website -->
+                <article class="project-card glass-card reveal-element">
+                    <div class="project-img-wrapper">
+                        <!-- Glass overlay for interactive buttons -->
+                        <div class="project-overlay">
+                            <a href="https://ahmed-mandoh.vercel.app" target="_blank" rel="noopener noreferrer" class="project-overlay-btn" aria-label="View Live Site"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a href="https://github.com/Kamel-Ahmed7" target="_blank" rel="noopener noreferrer" class="project-overlay-btn" aria-label="View GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        
+                        <div class="project-img-placeholder">
+                            <div class="project-placeholder-pattern"></div>
+                            <div class="project-placeholder-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <h3 class="project-title">Ahmed Mandoh Law Office</h3>
+                        <p class="project-desc">
+                            Engineered a fully responsive, production-grade business website for a professional law firm. Architected intuitive navigation layouts and custom aesthetic layouts to elevate the client's corporate digital branding.
+                        </p>
+                        <div class="project-tech-list">
+                            <span class="project-tech-badge">HTML5</span>
+                            <span class="project-tech-badge">CSS3</span>
+                            <span class="project-tech-badge">JavaScript</span>
+                            <span class="project-tech-badge">Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ahmed-mandoh.vercel.app" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                                Live Demo <i class="fa-solid fa-external-link"></i>
+                            </a>
+                            <a href="https://github.com/Kamel-Ahmed7" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-secondary">
+                                Codebase <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 Placeholder (Future Expansion) -->
+                <article class="project-card glass-card reveal-element delay-150">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder">
+                            <div class="project-placeholder-pattern"></div>
+                            <div class="project-placeholder-icon"><i class="fa-solid fa-terminal"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <h3 class="project-title">Data Analysis Pipeline</h3>
+                        <p class="project-desc">
+                            Analyzing large datasets using Pandas, NumPy, and Power Query to clean raw transaction records and construct interactive dashboards displaying monthly KPIs.
+                        </p>
+                        <div class="project-tech-list">
+                            <span class="project-tech-badge">Python</span>
+                            <span class="project-tech-badge">Pandas</span>
+                            <span class="project-tech-badge">NumPy</span>
+                            <span class="project-tech-badge">Excel</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-btn project-btn-secondary" style="cursor: not-allowed; opacity: 0.6;">
+                                Coming Soon <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <a href="https://github.com/Kamel-Ahmed7" target="_blank" rel="noopener" class="project-btn project-btn-secondary">
+                                Repository <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 Placeholder (Future Expansion) -->
+                <article class="project-card glass-card reveal-element delay-300">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder">
+                            <div class="project-placeholder-pattern"></div>
+                            <div class="project-placeholder-icon"><i class="fa-solid fa-cubes"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-details">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-desc">
+                            A productivity application built utilizing interactive component architectures, incorporating user storage configurations and custom light/dark configurations.
+                        </p>
+                        <div class="project-tech-list">
+                            <span class="project-tech-badge">JavaScript</span>
+                            <span class="project-tech-badge">Tailwind CSS</span>
+                            <span class="project-tech-badge">Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-btn project-btn-secondary" style="cursor: not-allowed; opacity: 0.6;">
+                                Coming Soon <i class="fa-solid fa-lock"></i>
+                            </span>
+                            <a href="https://github.com/Kamel-Ahmed7" target="_blank" rel="noopener" class="project-btn project-btn-secondary">
+                                Repository <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 8. CERTIFICATIONS SECTION -->
+        <section id="certifications" aria-label="Academic & Industry Certifications">
+            <div class="section-header reveal-element">
+                <span class="section-subtitle">Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card glass-card reveal-element">
+                    <div class="cert-top">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <span class="cert-date">April 2026</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">Learn HTML & CSS</h3>
+                        <span class="cert-issuer">Information Technology Institute (ITI Mahara-Tech)</span>
+                    </div>
+                    <a href="https://mahara-tech.gov.eg" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+                        Verify Credential <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card glass-card reveal-element delay-100">
+                    <div class="cert-top">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <span class="cert-date">January 2026</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">Python Programming Basics</h3>
+                        <span class="cert-issuer">ITI / AI Academy</span>
+                    </div>
+                    <a href="https://mahara-tech.gov.eg" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+                        Verify Credential <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card glass-card reveal-element delay-200">
+                    <div class="cert-top">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <span class="cert-date">June 2026</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">Introduction to Cybersecurity</h3>
+                        <span class="cert-issuer">Cisco Networking Academy</span>
+                    </div>
+                    <a href="https://www.netacad.com" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+                        Verify Credential <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card glass-card reveal-element">
+                    <div class="cert-top">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <span class="cert-date">February 2026</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">Computer Network Fundamentals</h3>
+                        <span class="cert-issuer">ITI Mahara-Tech</span>
+                    </div>
+                    <a href="https://mahara-tech.gov.eg" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+                        Verify Credential <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="cert-card glass-card reveal-element delay-100">
+                    <div class="cert-top">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-lock"></i></div>
+                        <span class="cert-date">April 2026</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3 class="cert-title">Introduction to Network Security</h3>
+                        <span class="cert-issuer">ITI Mahara-Tech</span>
+                    </div>
+                    <a href="https://mahara-tech.gov.eg" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+                        Verify Credential <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. WHY HIRE ME SECTION -->
+        <section id="why-hire" aria-label="Why Hire Kamel Ahmed Ramadan">
+            <div class="section-header reveal-element">
+                <span class="section-subtitle">Values</span>
+                <h2 class="section-title">Why Hire Me</h2>
+            </div>
+
+            <div class="hire-grid">
+                <!-- Highlight 1 -->
+                <div class="hire-card glass-card reveal-element">
+                    <div class="hire-icon-wrapper"><i class="fa-solid fa-brain"></i></div>
+                    <h3 class="hire-card-title">Problem Solving</h3>
+                    <p class="hire-card-desc">Solving complex programming puzzles with logical structures and optimized algos, backed by rigorous CS training.</p>
+                </div>
+
+                <!-- Highlight 2 -->
+                <div class="hire-card glass-card reveal-element delay-100">
+                    <div class="hire-icon-wrapper"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3 class="hire-card-title">Frontend Dev</h3>
+                    <p class="hire-card-desc">Deep focus on constructing modern, fluid user experiences using semantic HTML, CSS systems, and modern libraries.</p>
+                </div>
+
+                <!-- Highlight 3 -->
+                <div class="hire-card glass-card reveal-element delay-200">
+                    <div class="hire-icon-wrapper"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="hire-card-title">Data Analysis</h3>
+                    <p class="hire-card-desc">Ability to interpret datasets, trace trends, and construct analytical dashboards using Python pipelines.</p>
+                </div>
+
+                <!-- Highlight 4 -->
+                <div class="hire-card glass-card reveal-element delay-300">
+                    <div class="hire-icon-wrapper"><i class="fa-solid fa-rocket"></i></div>
+                    <h3 class="hire-card-title">Fast Learning</h3>
+                    <p class="hire-card-desc">Keen on acquiring knowledge, exploring new SDK APIs, and adopting software workflows quickly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CONTACT SECTION -->
+        <section id="contact" aria-label="Contact Information">
+            <div class="section-header reveal-element">
+                <span class="section-subtitle">Connection</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info Panel -->
+                <div class="contact-info-card glass-card reveal-element">
+                    <div>
+                        <h3 class="contact-info-title">Let's build something great</h3>
+                        <p class="contact-info-desc">Have a project, internship, or opportunity? Drop me a message. I will get back to you as soon as possible.</p>
+                        
+                        <div class="contact-details-list">
+                            <!-- Email Detail -->
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div class="contact-item-details">
+                                    <span class="contact-item-label">Email</span>
+                                    <a href="mailto:kamelmando498@gmail.com" class="contact-item-value">kamelmando498@gmail.com</a>
+                                    <span class="copy-tooltip" id="email-tooltip">Copied!</span>
+                                </div>
+                                <button class="btn-copy" data-copy="kamelmando498@gmail.com" data-target="email-tooltip" aria-label="Copy Email address"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+
+                            <!-- Phone Detail -->
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-item-details">
+                                    <span class="contact-item-label">Phone</span>
+                                    <a href="tel:+201559346984" class="contact-item-value">+20 155 934 6984</a>
+                                    <span class="copy-tooltip" id="phone-tooltip">Copied!</span>
+                                </div>
+                                <button class="btn-copy" data-copy="+201559346984" data-target="phone-tooltip" aria-label="Copy Phone number"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-links-container">
+                        <a href="https://www.linkedin.com/in/kamel-ramadan-kr/" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Kamel-Ahmed7" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:kamelmando498@gmail.com" class="social-circle-link" aria-label="Direct Email"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="contact-form-card glass-card reveal-element delay-200">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group-row">
+                            <div class="form-field-group">
+                                <input type="text" id="form-name" class="form-input" placeholder="Name" required>
+                                <label for="form-name" class="form-label">Your Name</label>
+                            </div>
+                            <div class="form-field-group">
+                                <input type="email" id="form-email" class="form-input" placeholder="Email" required>
+                                <label for="form-email" class="form-label">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="form-field-group">
+                            <input type="text" id="form-subject" class="form-input" placeholder="Subject" required>
+                            <label for="form-subject" class="form-label">Subject</label>
+                        </div>
+                        <div class="form-field-group">
+                            <textarea id="form-message" class="form-textarea" placeholder="Message" required></textarea>
+                            <label for="form-message" class="form-label">Message</label>
+                        </div>
+
+                        <!-- Submit status messages container -->
+                        <div class="form-feedback" id="form-feedback"></div>
+
+                        <button type="submit" class="btn btn-primary" id="form-submit-btn">
+                            Send Message <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#hero" class="footer-logo">
+                        KAMEL<span class="logo-dot"></span>
+                    </a>
+                    <p class="footer-desc">Frontend Developer & Computer Science Student. Designing smooth user interfaces and transforming analytical workflows.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <div class="footer-nav-col">
+                        <span class="footer-nav-title">Navigation</span>
+                        <div class="footer-nav-links">
+                            <a href="#hero" class="footer-nav-link">Home</a>
+                            <a href="#about" class="footer-nav-link">About</a>
+                            <a href="#education" class="footer-nav-link">Education</a>
+                            <a href="#skills" class="footer-nav-link">Skills</a>
+                        </div>
+                    </div>
+                    <div class="footer-nav-col">
+                        <span class="footer-nav-title">Works & Certificates</span>
+                        <div class="footer-nav-links">
+                            <a href="#projects" class="footer-nav-link">Featured Projects</a>
+                            <a href="#certifications" class="footer-nav-link">Certifications</a>
+                            <a href="#why-hire" class="footer-nav-link">Why Me</a>
+                            <a href="#contact" class="footer-nav-link">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Kamel Ahmed Ramadan. All rights reserved. Built with passion &amp; Vanilla JavaScript.</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/kamel-ramadan-kr/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Kamel-Ahmed7" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic Controller -->
+    <script src="js/main.js"></script>
+</body>
+</html>
