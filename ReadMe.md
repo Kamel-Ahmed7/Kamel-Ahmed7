@@ -13,11 +13,18 @@ Recognized as an **AI Ambassador** with certifications including **Huawei HCIA-A
 
 ## 🎓 Training & Certifications
 
-* **Front-End Web Development Summer Training** — National Telecommunication Institute (NTI)
-* **Web Developer & Code Maker** — Life Makers (صناع الحياة - Code Makers)
-* **Junior Data Analyst Track** — Digital Egypt Pioneers Initiative (DEPI)
-* **HCIA-AI V4.0 Certified** — Huawei & NTI
-* **Machine Learning & Backend Fundamentals** — Creativa Hub
+### 🤖 AI & Machine Learning
+* **AI Ambassador Program (Beginner Level)** — NTI & Ministry of Communications and Information Technology (MCIT)
+* **HCIA-AI V4.0 Certification** — Huawei & NTI
+* **Machine Learning & Applied AI Training** — Creativa Hub Mansoura
+
+### 💻 Web Development & Software Engineering
+* **Front-End Web Development Training** — Creativa Hub Tanta
+* **Front-End Web Development Summer Program** — National Telecommunication Institute (NTI)
+* **Web Developer Volunteer** — Life Makers (صناع الحياة - Code Makers)
+
+### 📜 Online Certifications & Self-Paced Learning
+* **Web & Backend Development Courses** — Mahara-Tech Platform & Self-Study
 * **Introduction to Cybersecurity** — Cisco Networking Academy
 * **Entrepreneurship & Innovation Training** — InnovEgypt (TIEC & NTI)
 
